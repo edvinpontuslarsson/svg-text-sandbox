@@ -1,4 +1,11 @@
 <!-- TODO want line break if too long text, easy to fix prob -->
+
+<!-- TODO just rectangle, calc width needed -->
+
+<!-- TODO use monospaced font, https://en.wikipedia.org/wiki/Monospaced_font -->
+
+<!-- then can use rectangle and calculate height depending on lines -->
+
 <svg width="600" height="60" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter x="0" y="0" width="1" height="1" id="solid">
@@ -7,5 +14,6 @@
     </filter>
   </defs>
   <text filter="url(#solid)" x="20" y="50" font-size="18">There are several ways to go about this</text>
+  <!-- TODO fix nicer font also -->
   <text x="20" y="50" fill="white" font-size="18">There are several ways to go about this</text>
 </svg>
