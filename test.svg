@@ -1,5 +1,4 @@
 <!-- TODO change font, and, with js, if too long, new one under -->
-
 <svg width="800px" height="600px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<defs>
 		<filter id="rounded-corners-2" primitiveUnits="objectBoundingBox">
@@ -7,10 +6,19 @@
 			<feComposite operator="over" in="SourceGraphic" />
 		</filter>
 	</defs>
-	<text fill="white" filter="url(#rounded-corners-2)" x="20" y="20" style="font-size:22">
+	<text fill="white" filter="url(#rounded-corners-2)" x="20" y="4">
 		Sten sax påse
 	</text>
-	<text fill="white" filter="url(#rounded-corners-2)" x="20" y="52" style="font-size:22">
+	<text fill="white" filter="url(#rounded-corners-2)" x="20" y="52">
 		Sten sax påse
 	</text>
+
+	<style>
+		<![CDATA[
+			text{
+				dominant-baseline: hanging;
+				font: 22px Verdana, Helvetica, Arial, sans-serif;
+			}
+		]]>
+	</style>
 </svg>
