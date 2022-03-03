@@ -7,10 +7,8 @@
 		</filter>
 	</defs>
 	<text fill="white" filter="url(#rounded-corners-2)" x="20" y="4">
-		Sten sax påse
-	</text>
-	<text fill="white" filter="url(#rounded-corners-2)" x="20" y="34">
-		Sten sax påse
+		<tspan x="1%" dy="1.2em">Sten sax påse</tspan>
+		<!-- <tspan x="1%" dy="1.2em">Sten sax påse</tspan> -->
 	</text>
 
 	<style>
