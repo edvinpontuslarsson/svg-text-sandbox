@@ -1,12 +1,10 @@
-<svg width="350" height="60" xmlns="http://www.w3.org/2000/svg">
-<text>
-  This is <tspan font-weight="bold" fill="red">bold and red</tspan>
-</text>
-
-<style><![CDATA[
-  text{
-    dominant-baseline: hanging;
-    font: 28px Verdana, Helvetica, Arial, sans-serif;
-  }
-]]></style>
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter x="0" y="0" width="1" height="1" id="solid">
+      <feFlood flood-color="yellow"/>
+      <feComposite in="SourceGraphic" operator="xor"/>
+    </filter>
+  </defs>
+  <text filter="url(#solid)" x="20" y="50" font-size="50"> hej </text>
+  <text x="20" y="50" font-size="50">hej</text>
 </svg>
