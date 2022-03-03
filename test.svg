@@ -10,4 +10,7 @@
 	<text fill="white" filter="url(#rounded-corners-2)" x="20" y="20" style="font-size:22">
 		Sten sax påse
 	</text>
+	<text fill="white" filter="url(#rounded-corners-2)" x="20" y="52" style="font-size:22">
+		Sten sax påse
+	</text>
 </svg>
