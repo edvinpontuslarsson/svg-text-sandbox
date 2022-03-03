@@ -8,7 +8,7 @@
 
 const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae ligula eget justo ullamcorper ultricies ac eu ligula. Nam commodo nibh dui, at pharetra justo ultricies ut. Donec ornare molestie congue.";
 
-const limit = 11;
+const limit = 60;
 
 const lines = [];
 
