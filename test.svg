@@ -1,13 +1,3 @@
-<!-- TODO want line break if too long text, easy to fix prob -->
-
-<!-- TODO just rectangle, calc width needed -->
-
-<!-- TODO use monospaced font, https://en.wikipedia.org/wiki/Monospaced_font -->
-
-<!-- then can use rectangle and calculate height depending on lines -->
-
-<!--xmlns="http://www.w3.org/2000/svg"-->
-
 <svg width="800px" height="600px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
   <filter id="rounded-corners" x="-5%" width="110%" y="0%" height="100%">
