@@ -1,10 +1,11 @@
-<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+<!-- TODO want line break if too long text, easy to fix prob -->
+<svg width="600" height="60" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter x="0" y="0" width="1" height="1" id="solid">
-      <feFlood flood-color="yellow"/>
+      <feFlood flood-color="rgb(28,28,28)"/>
       <feComposite in="SourceGraphic" operator="xor"/>
     </filter>
   </defs>
-  <text filter="url(#solid)" x="20" y="50" font-size="50"> hej </text>
-  <text x="20" y="50" font-size="50">hej</text>
+  <text filter="url(#solid)" x="20" y="50" font-size="18">There are several ways to go about this</text>
+  <text x="20" y="50" fill="white" font-size="18">There are several ways to go about this</text>
 </svg>
