@@ -6,14 +6,38 @@
 
 <!-- then can use rectangle and calculate height depending on lines -->
 
-<svg width="600" height="60" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter x="0" y="0" width="1" height="1" id="solid">
-      <feFlood flood-color="rgb(28,28,28)"/>
-      <feComposite in="SourceGraphic" operator="xor"/>
-    </filter>
+<!--xmlns="http://www.w3.org/2000/svg"-->
+
+<svg width="800px" height="600px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <filter id="rounded-corners" x="-5%" width="110%" y="0%" height="100%">
+<feFlood flood-color="#FFAA55"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComponentTransfer>
+  <feFuncA type="table" tableValues="0 0 0 1"/>
+</feComponentTransfer>
+
+<feComponentTransfer>
+  <feFuncA type="table" tableValues="0 1 1 1 1 1 1 1"/>
+</feComponentTransfer>
+   <feComposite operator="over" in="SourceGraphic"/>
+  </filter>
+  
+   <filter id="rounded-corners-2" primitiveUnits="objectBoundingBox">
+<feImage preserveAspectRatio="none" width="110%" height="110%" x="-5%" y="0%"  xlink:href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 400 40' height='40' width='400'%3E%3Crect fill='red' x='0' y='0' rx='10' ry='10' width='400' height='40'/%3E%3C/svg%3E"/>
+   <feComposite operator="over" in="SourceGraphic"/>
+  </filter> 
+  
+  
   </defs>
-  <text filter="url(#solid)" x="20" y="50" font-size="18">There are several ways to go about this</text>
-  <!-- TODO fix nicer font also -->
-  <text x="20" y="50" fill="white" font-size="18">There are several ways to go about this</text>
+
+  
+  <text filter="url(#rounded-corners)" x="20" y="40" style="font-size:30">Blur and opacity filter</text>
+  
+  <text filter="url(#rounded-corners)" x="20" y="80" style="font-size:30"> But the x padding is relative and overflows with long text</text>
+  
+<text filter="url(#rounded-corners-2)" x="20" y="140" style="font-size:30">feImage and a rect filter</text>
+  
+<text filter="url(#rounded-corners-2)" x="20" y="180" style="font-size:30">But you still can't </text>
+
 </svg>
