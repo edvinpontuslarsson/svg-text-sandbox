@@ -1,4 +1,5 @@
 <!-- TODO change font, and, with js, if too long, new one under -->
+<!-- TODO no no, skip that, revert to prev commit where just works simpler -->
 <svg width="800px" height="600px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<defs>
 		<filter id="rounded-corners-2" primitiveUnits="objectBoundingBox">
