@@ -19,7 +19,6 @@ let tempString = "";
 for (let i = 0; i < text.length; i++) {
   //
 
-
   counter++;
 }
 
