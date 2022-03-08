@@ -1,5 +1,5 @@
 /**
- * @typedef ISVGParams
+ * @typedef ISVGTextParams
  * @property {string} text
  * @property {number | undefined} width
  * @property {number | undefined} height
@@ -7,9 +7,9 @@
  */
 
 /**
- * @param {ISVGParams} params
+ * @param {ISVGTextParams} params
  */
-function getSvg(params) {
+function getSvgText(params) {
   const text = params.text || "";
   const width = params.width || 200;
   const height = params.height || 44;
@@ -38,4 +38,4 @@ function getSvg(params) {
 `;
 }
 
-console.log(getSvg({ text: "hej hej" }));
+console.log(getSvgText({ text: "hej hej" }));
