@@ -1,10 +1,20 @@
 /**
- * @param {string} text
- * @param {number | undefined} width
- * @param {number | undefined} height
- * @param {number | undefined} fontSize
+ * @typedef ISVGParams
+ * @property {string} text
+ * @property {number | undefined} width
+ * @property {number | undefined} height
+ * @property {number | undefined} fontSize
  */
-function getSvg(text = "", width = 200, height = 44, fontSize = 22) {
+
+/**
+ * @param {ISVGParams} params
+ */
+function getSvg(params) {
+  const text = params.text || "";
+  const width = params.width || 200;
+  const height = params.height || 44;
+  const fontSize = params.fontSize || 22;
+
   return `
     <svg width="${width}px" height="${height}px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
@@ -27,3 +37,5 @@ function getSvg(text = "", width = 200, height = 44, fontSize = 22) {
     </svg>
 `;
 }
+
+console.log(getSvg({ text: "hej hej" }));
